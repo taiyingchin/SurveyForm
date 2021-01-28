@@ -6,38 +6,57 @@
     </head>
     
     <body>
-        <h1 id = "title">Personal Finance Survey</h1>
-        <p id = "description">This is a survey form to learn more about your personal finance habits so that Balance can learn your spending habits</p>
+        <h1 id = "title">Balance Form</h1>
+        <p id = "description">This is a survey to learn more about your personal finance habits so that Balance can help optimize your earnings</p>
 
         <form action="" id = "survey-form">
 
-            <label for="name" id = "name-label">What is your name:</label><br>
-            <input type="text" id = "name" name = "name" placeholder="Full Name" required><br>
+            <!-- Basic Information -->
+            <div>
+                <label for="name" id = "name-label">Name</label><br>
+                <input type="text" id = "name" name = "name" placeholder="Enter Your Full Name" required><br>
 
-            <label for="email" id = "email-label">What is your email:</label><br>
-            <input type="email" id = "email" name = "email" placeholder="Email Address" required><br>
+                <label for="email" id = "email-label">Email</label><br>
+                <input type="email" id = "email" name = "email" placeholder="Enter Your Email" required><br>
 
-            <label for="number" id = "number-label">What is your phone number:</label><br>
-            <input type="number" id = "number" name = "number" placeholder="Phone Number" min="0" max="10"><br>
+                <label for="number" id = "number-label">How old are you? (optional)</label><br>
+                <input type="number" id = "number" name = "age" placeholder="Age" min="0" max="120"><br>
+            </div>
 
-            <p>What are your reasons for choosing Balance?</p>
-            <select name="reason" id="dropdown">
-                <option value="save">Saving Money</option>
-                <option value="track">Track Expenses</option>
-                <option value="fun">For Fun</option>
-            </select>
+            <!-- Dropdown Menu -->
+            <div>
+                <p>How did you discover Balance?</p>
+                <select name="discover" id="dropdown">
+                    <option disabled selected>Pick One</option>
+                    <option value="app-store">App Store</option>
+                    <option value="friend">Friend</option>
+                    <option value="online">Online Source</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
 
-            <p>placeholder placeholder placeholder placeholder placeholder</p>
-            <label for=""><input type="radio">placeholder</label>
-            <label for=""><input type="radio">placeholder</label>
-            <label for=""><input type="radio">placeholder</label>
-            <label for=""><input type="radio">placeholder</label>
+            <!-- Radio Buttons -->
+            <div>
+                <p>Are you willing to recommend Balance to a friend?</p>
+                <label for=""><input type="radio">Yes</label>
+                <label for=""><input type="radio">No</label>
+                <label for=""><input type="radio">Maybe</label>
+            </div>
 
-            <p>this is a placeholder</p>
-            <label for=""><input type="checkbox">placeholder</label>
-            <label for=""><input type="checkbox">placeholder</label>
-            <label for=""><input type="checkbox">placeholder</label>
-            <label for=""><input type="checkbox">placeholder</label>
+            <!-- Checkboxes -->
+            <div>
+                <p>What are your reasons for choosing Balance?</p>
+                <label for=""><input type="checkbox">Budgeting</label>
+                <label for=""><input type="checkbox">Expense Tracking</label>
+                <label for=""><input type="checkbox">Financial Reports</label>
+                <label for=""><input type="checkbox">Test Trial</label>
+            </div>
+
+            <!-- Text Area -->
+            <div>
+                <p>Are there any other additional notes that you would like to add?</p>
+                <textarea name="feedback" id="feedback" cols="30" rows="10"></textarea>
+            </div>
         </form>
 
         <script src = "https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
