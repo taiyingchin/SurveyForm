@@ -38,24 +38,29 @@
             <!-- Radio Buttons -->
             <div>
                 <p>Are you willing to recommend Balance to a friend?</p>
-                <label for=""><input type="radio">Yes</label>
-                <label for=""><input type="radio">No</label>
-                <label for=""><input type="radio">Maybe</label>
+                <label for=""><input type="radio" name = "recommend" value = "yes">Yes</label>
+                <label for=""><input type="radio" name = "recommend" value = "no">No</label>
+                <label for=""><input type="radio" name = "recommend" value = "maybe">Maybe</label>
             </div>
 
             <!-- Checkboxes -->
             <div>
-                <p>What are your reasons for choosing Balance?</p>
-                <label for=""><input type="checkbox">Budgeting</label>
-                <label for=""><input type="checkbox">Expense Tracking</label>
-                <label for=""><input type="checkbox">Financial Reports</label>
-                <label for=""><input type="checkbox">Test Trial</label>
+                <p>What are your reasons for choosing Balance? (Check all that apply)</p>
+                <label for=""><input type="checkbox" value = "budget">Budgeting</label>
+                <label for=""><input type="checkbox" value = "tracking">Expense Tracking</label>
+                <label for=""><input type="checkbox" value = "reporting">Financial Reports</label>
+                <label for=""><input type="checkbox" value = "testing">Test Trial</label>
             </div>
 
             <!-- Text Area -->
             <div>
                 <p>Are there any other additional notes that you would like to add?</p>
                 <textarea name="feedback" id="feedback" cols="30" rows="10"></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div>
+                <input type="submit" id = "submit">
             </div>
         </form>
 
