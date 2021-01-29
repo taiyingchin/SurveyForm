@@ -6,63 +6,65 @@
     </head>
     
     <body>
-        <h1 id = "title">Balance Form</h1>
-        <p id = "description">This is a survey to learn more about your personal finance habits so that Balance can help optimize your earnings</p>
+        <div class = "container">
+            <h1 id = "title">Balance Form</h1>
+            <p id = "description">This is a survey to learn more about your personal finance habits so that Balance can help optimize your earnings</p>
 
-        <form action="" id = "survey-form">
+            <form action="" id = "survey-form">
 
-            <!-- Basic Information -->
-            <div>
-                <label for="name" id = "name-label">Name</label><br>
-                <input type="text" id = "name" name = "name" placeholder="Enter Your Full Name" required><br>
+                <!-- Basic Information -->
+                <div class = "basic">
+                    <label for="name" id = "name-label">Name</label><br>
+                    <input type="text" id = "name" name = "name" placeholder="Enter Your Full Name" required><br>
 
-                <label for="email" id = "email-label">Email</label><br>
-                <input type="email" id = "email" name = "email" placeholder="Enter Your Email" required><br>
+                    <label for="email" id = "email-label">Email</label><br>
+                    <input type="email" id = "email" name = "email" placeholder="Enter Your Email" required><br>
 
-                <label for="number" id = "number-label">How old are you? (optional)</label><br>
-                <input type="number" id = "number" name = "age" placeholder="Age" min="0" max="120"><br>
-            </div>
+                    <label for="number" id = "number-label">How old are you? (optional)</label><br>
+                    <input type="number" id = "number" name = "age" placeholder="Age" min="0" max="120"><br>
+                </div>
 
-            <!-- Dropdown Menu -->
-            <div>
-                <p>How did you discover Balance?</p>
-                <select name="discover" id="dropdown">
-                    <option disabled selected>Pick One</option>
-                    <option value="app-store">App Store</option>
-                    <option value="friend">Friend</option>
-                    <option value="online">Online Source</option>
-                    <option value="other">Other</option>
-                </select>
-            </div>
+                <!-- Dropdown Menu -->
+                <div class = "dropdown">
+                    <p>How did you discover Balance?</p>
+                    <select name="discover" id="dropdown">
+                        <option disabled selected>Pick One</option>
+                        <option value="app-store">App Store</option>
+                        <option value="friend">Friend</option>
+                        <option value="online">Online Source</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
 
-            <!-- Radio Buttons -->
-            <div>
-                <p>Are you willing to recommend Balance to a friend?</p>
-                <label for=""><input type="radio" name = "recommend" value = "yes">Yes</label>
-                <label for=""><input type="radio" name = "recommend" value = "no">No</label>
-                <label for=""><input type="radio" name = "recommend" value = "maybe">Maybe</label>
-            </div>
+                <!-- Radio Buttons -->
+                <div class = "radio">
+                    <p>Are you willing to recommend Balance to a friend?</p>
+                    <label for=""><input type="radio" name = "recommend" value = "yes">Yes</label>
+                    <label for=""><input type="radio" name = "recommend" value = "no">No</label>
+                    <label for=""><input type="radio" name = "recommend" value = "maybe">Maybe</label>
+                </div>
 
-            <!-- Checkboxes -->
-            <div>
-                <p>What are your reasons for choosing Balance? (Check all that apply)</p>
-                <label for=""><input type="checkbox" value = "budget">Budgeting</label>
-                <label for=""><input type="checkbox" value = "tracking">Expense Tracking</label>
-                <label for=""><input type="checkbox" value = "reporting">Financial Reports</label>
-                <label for=""><input type="checkbox" value = "testing">Test Trial</label>
-            </div>
+                <!-- Checkboxes -->
+                <div class = "checks">
+                    <p>What are your reasons for choosing Balance? (Check all that apply)</p>
+                    <label for=""><input type="checkbox" value = "budget">Budgeting</label>
+                    <label for=""><input type="checkbox" value = "tracking">Expense Tracking</label>
+                    <label for=""><input type="checkbox" value = "reporting">Financial Reports</label>
+                    <label for=""><input type="checkbox" value = "testing">Test Trial</label>
+                </div>
 
-            <!-- Text Area -->
-            <div>
-                <p>Are there any other additional notes that you would like to add?</p>
-                <textarea name="feedback" id="feedback" cols="30" rows="10"></textarea>
-            </div>
+                <!-- Text Area -->
+                <div class = "text">
+                    <p>Are there any other additional notes that you would like to add?</p>
+                    <textarea name="feedback" id="feedback" cols="30" rows="10"></textarea>
+                </div>
 
-            <!-- Submit Button -->
-            <div>
-                <input type="submit" id = "submit">
-            </div>
-        </form>
+                <!-- Submit Button -->
+                <div>
+                    <input type="submit" id = "submit">
+                </div>
+            </form>
+        </div>
 
         <script src = "https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     </body>
