@@ -6,3 +6,12 @@ body{
     background-color: black;
 }
 
+header h1{
+    border: 5px solid red;
+    text-align: center;
+}
+
+header p{
+    border: 5px solid blue;
+    text-align: center;
+}

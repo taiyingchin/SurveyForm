@@ -6,21 +6,23 @@
     </head>
     
     <body>
-        <div class = "container">
+        <header>
             <h1 id = "title">Balance Form</h1>
-            <p id = "description">This is a survey to learn more about your personal finance habits so that Balance can help optimize your earnings</p>
-
+            <p id = "description"><i>Thank you for taking this survey</i></p>
+        </header>
+        
+        <div class = "container">
             <form action="" id = "survey-form">
 
                 <!-- Basic Information -->
                 <div class = "basic">
-                    <label for="name" id = "name-label">Name</label><br>
+                    <label for="name" id = "name-label" class = "form-group">Name</label><br>
                     <input type="text" id = "name" name = "name" placeholder="Enter Your Full Name" required><br>
 
-                    <label for="email" id = "email-label">Email</label><br>
+                    <label for="email" id = "email-label" class = "form-group">Email</label><br>
                     <input type="email" id = "email" name = "email" placeholder="Enter Your Email" required><br>
 
-                    <label for="number" id = "number-label">How old are you? (optional)</label><br>
+                    <label for="number" id = "number-label" class = "form-group">How old are you? (optional)</label><br>
                     <input type="number" id = "number" name = "age" placeholder="Age" min="0" max="120"><br>
                 </div>
 
