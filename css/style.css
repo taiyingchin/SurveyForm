@@ -6,12 +6,83 @@ body{
     background-color: black;
 }
 
+/* Title and Desc */
 header h1{
-    border: 5px solid red;
+    /* border: 5px solid red; */
     text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 0.25rem;
 }
 
 header p{
-    border: 5px solid blue;
+    /* border: 5px solid blue; */
     text-align: center;
+}
+
+/* Form Styling */
+
+form{
+    /* background: blue; */
+}
+
+p{
+    font-size: 18px;
+}
+
+label{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+input, button, select, textarea{
+    font-family: inherit;
+    font-size: inherit;
+} 
+
+.form-control{
+    display: block;
+    width: 98%;
+    height: 2.375rem;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #737B80;
+    color: #737B80;
+}
+
+
+.container{
+    background: #333;
+    padding: 2.5rem 0.625rem;
+    border-radius: 15px;
+    width: 35%;
+    margin: auto;
+}
+
+.form-group{
+    margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
+}
+
+.radio, .checkbox{
+    display: inline-block;
+    margin-right: 8px;
+    min-height: 18px;
+    min-width: 18px;
+}
+
+.input-text{
+    width: 98%;
+}
+
+.submit-button{
+    display: block;
+    width: 98%;
+    background: #37af65;
+    border-color: #37af65;
+    color: white;
+    padding: 4px;
+    border-radius: 5px;
+    cursor: pointer;
 }

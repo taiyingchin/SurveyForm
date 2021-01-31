@@ -15,21 +15,23 @@
             <form action="" id = "survey-form">
 
                 <!-- Basic Information -->
-                <div class = "basic">
-                    <label for="name" id = "name-label" class = "form-group">Name</label><br>
-                    <input type="text" id = "name" name = "name" placeholder="Enter Your Full Name" required><br>
-
-                    <label for="email" id = "email-label" class = "form-group">Email</label><br>
-                    <input type="email" id = "email" name = "email" placeholder="Enter Your Email" required><br>
-
-                    <label for="number" id = "number-label" class = "form-group">How old are you? (optional)</label><br>
-                    <input type="number" id = "number" name = "age" placeholder="Age" min="0" max="120"><br>
+                <div class = "form-group">
+                    <label for="name" id = "name-label">Name</label><br>
+                    <input type="text" id = "name" name = "name" placeholder="Enter Your Full Name" class = "form-control" required><br>
+                </div>
+                <div class = "form-group">
+                    <label for="email" id = "email-label">Email</label><br>
+                    <input type="email" id = "email" name = "email" placeholder="Enter Your Email" class = "form-control" required><br>
+                </div>
+                <div class = "form-group">
+                    <label for="number" id = "number-label">How old are you? (optional)</label><br>
+                    <input type="number" id = "number" name = "age" placeholder="Age" min="0" max="120" class = "form-control"><br>
                 </div>
 
                 <!-- Dropdown Menu -->
-                <div class = "dropdown">
+                <div class = "form-group">
                     <p>How did you discover Balance?</p>
-                    <select name="discover" id="dropdown">
+                    <select name="discover" id="dropdown" class = "form-control">
                         <option disabled selected>Pick One</option>
                         <option value="app-store">App Store</option>
                         <option value="friend">Friend</option>
@@ -39,31 +41,31 @@
                 </div>
 
                 <!-- Radio Buttons -->
-                <div class = "radio">
+                <div class = "form-group">
                     <p>Are you willing to recommend Balance to a friend?</p>
-                    <label for=""><input type="radio" name = "recommend" value = "yes">Yes</label>
-                    <label for=""><input type="radio" name = "recommend" value = "no">No</label>
-                    <label for=""><input type="radio" name = "recommend" value = "maybe">Maybe</label>
+                    <label for=""><input type="radio" name = "recommend" value = "yes" class = "radio">Yes</label>
+                    <label for=""><input type="radio" name = "recommend" value = "no" class = "radio">No</label>
+                    <label for=""><input type="radio" name = "recommend" value = "maybe" class = "radio">Maybe</label>
                 </div>
 
                 <!-- Checkboxes -->
-                <div class = "checks">
+                <div class = "form-group">
                     <p>What are your reasons for choosing Balance? (Check all that apply)</p>
-                    <label for=""><input type="checkbox" value = "budget">Budgeting</label>
-                    <label for=""><input type="checkbox" value = "tracking">Expense Tracking</label>
-                    <label for=""><input type="checkbox" value = "reporting">Financial Reports</label>
-                    <label for=""><input type="checkbox" value = "testing">Test Trial</label>
+                    <label for=""><input type="checkbox" value = "budget" class = "checkbox">Budgeting</label>
+                    <label for=""><input type="checkbox" value = "tracking" class = "checkbox">Expense Tracking</label>
+                    <label for=""><input type="checkbox" value = "reporting" class = "checkbox">Financial Reports</label>
+                    <label for=""><input type="checkbox" value = "testing" class = "checkbox">Test Trial</label>
                 </div>
 
                 <!-- Text Area -->
-                <div class = "text">
+                <div class = "form-group">
                     <p>Are there any other additional notes that you would like to add?</p>
-                    <textarea name="feedback" id="feedback" cols="30" rows="10"></textarea>
+                    <textarea name="feedback" id="feedback" cols="30" rows="10" class = "input-text"></textarea>
                 </div>
 
                 <!-- Submit Button -->
-                <div>
-                    <input type="submit" id = "submit">
+                <div class = "form-group">
+                    <input type="submit" id = "submit" class = "submit-button">
                 </div>
             </form>
         </div>
